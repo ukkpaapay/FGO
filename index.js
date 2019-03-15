@@ -3,8 +3,8 @@ $(function(){
 $("#button").click(function() {
     $("#button").hide()
     $("#button1").fadeIn(3000)
-    var a=Math.floor(Math.random() * Math.floor(8));
-    if(a==0||a==1||a==3||a==4||a==6){
+    var a=Math.floor(Math.random() * Math.floor(11));
+    if(a==0||a==1||a==3||a==4||a==5||a==6||a==7||a==9||a==10){
      var b=Math.floor(Math.random() * Math.floor(7));
     switch(b){
     case 0:$("#myImg").attr("src", "servant/1-1.jpg");setTimeout(function() {servant(a,b)}, 800);break;
@@ -17,7 +17,7 @@ $("#button").click(function() {
     }
 
 }else{
-    if(a==2||a==5){
+    if(a==2||a==8){
         var b=Math.floor(Math.random() * Math.floor(13));
         switch(b){
             case 0:$("#myImg").attr("src", "servant/1.jpg");setTimeout(function() {servant(a,b)}, 800);break;
@@ -37,7 +37,7 @@ $("#button").click(function() {
     }
 }
 function servant(a,b) {
-    if(a==0||a==1||a==3||a==4||a==6||a==7){
+    if(a==0||a==1||a==3||a==4||a==5||a==6||a==7||a==9||a==10){
         if(b==0){var q=Math.floor(Math.random() * Math.floor(3));//saber
         switch(q){
         case 0:$("#myImg").attr("src", "servant1/saber/1-1.png");break;
@@ -110,7 +110,7 @@ function servant(a,b) {
 
 
 
-    if(a==2||a==5){
+    if(a==2||a==8){
         if(b==0){var q=Math.floor(Math.random() * Math.floor(5));//saber
         switch(q){
         case 0:$("#myImg").attr("src", "servant1/saber/1.png");break;
