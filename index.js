@@ -1,8 +1,8 @@
 $(function(){
     $("#button1").hide()
-$("button").click(function() {
+$("#button").click(function() {
     $("#button").hide()
-    $("#button1").fadeIn()
+    $("#button1").fadeIn(3000)
     var a=Math.floor(Math.random() * Math.floor(8));
     if(a==0||a==1||a==3||a==4||a==6){
      var b=Math.floor(Math.random() * Math.floor(7));
@@ -17,7 +17,6 @@ $("button").click(function() {
     }
 
 }else{
-    console.log(b);
     if(a==2||a==5){
         var b=Math.floor(Math.random() * Math.floor(13));
         switch(b){

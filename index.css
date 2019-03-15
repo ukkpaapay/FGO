@@ -1,76 +1,112 @@
+* {
+    box-sizing: border-box;          
+}
+.container {
+    display: flex;
+    flex-wrap: wrap;
+}
+.font{
+  font-size: 200%
+}    
 
 
 
-.logo{
+.center {           
+    margin-left: auto;
+    margin-right: auto;
+    width: 30%;
+  }
+
+  .logo{
     width:551;
     height:248;
 }
 .photo1{
-  margin-left:100px;   
-    width:350 ;
-    height:524;
+  margin-left: 15%;
+  /*text-align: center; */
+  width:80%;
 }
 .photo2{
-    margin-left:100px;   
-    width:105;
-    height:157;
+    margin-left: 15%;
+   width:70%;
 }
 
 
-.button {
-    margin-left:210;
+.button { 
+  /* margin-left: 25%;
+    width: 120px;
+    height:50px;
     background-color:#AEB404;
     border: none;
     color: white;
-    padding: 15px 32px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    cursor: pointer;
+    padding: 15px;
+
+    font-size: 100%; */
+    margin-left: 30%;
+    width:50%;
+
   }
 .rate{
     margin-left:130px;
 }
 
 .fix{
-    display: flex;
+    display: block;
     flex-wrap: wrap;
 }
-  
+ /* div{
+  border: 1px solid red;
+}  */
 
   body {
     background-image: url(bg/3.jpg);
     color: black;
   }
 
+  .col-1 {width: 8.33%;}
+  .col-2 {width: 16.66%;}
+  .col-3 {width: 25%;}
+  .col-4 {width: 33.33%;}
+  .col-5 {width: 41.66%;}
+  .col-6 {width: 50%;}
+  .col-7 {width: 58.33%;}
+  .col-8 {width: 66.66%;}
+  .col-9 {width: 75%;}
+  .col-10 {width: 83.33%;}
+  .col-11 {width: 91.66%;}
+  .col-12 {width: 100%;}
 
 
-  @media screen and (max-width: 500px) {
-    [class*="col-"]{
-        width:100%;
-    }
+
+
+  @media screen and (max-width: 768px) {
+
     body {
       background-image: url(bg/10.jpg);
       color: black;
     }
-    .photo1{
-      text-align: center;
-      width:205;
-      height:300;
-  }
-  .photo2{
-    text-align: center; 
-    width:105;
-    height:157;
+
+
+.photo3{
+
+    width:100%;
+
 }
+.photo4{
+
+  width:100%;
+
+}
+
+
+
     .logo{
 
         width:285;
         height:125;
     }
     .fix{
-        display: block;
+        display: flex;
         flex-wrap: wrap;
     }
 
@@ -81,39 +117,26 @@
         text-align: center;
       }
       .button {
-        margin-left: 140;
-        background-color:yellow;
-        border: 0;
-        color: black;
-        padding: 15px 32px;
-        text-align: center;
-        text-decoration: none;
-        display: inline-block;
-        font-size: 16px;
-        cursor: pointer;
+      /* background-color:#AEB404;
+      border: none;
+      color: white;
+      padding: 15px;
+       text-align: center; 
+      text-decoration: none;
+      display: inline-block;
+      font-size: 50%;
+      cursor: pointer; */
+      
+       margin-left: 30%;
       }
       .rate{
+
         text-align: center;
     }
 
-
-      .col-1 {width: 8.33%;}
-      .col-2 {width: 16.66%;}
-      .col-3 {width: 25%;}
-      .col-4 {width: 33.33%;}
-      .col-5 {width: 41.66%;}
-      .col-6 {width: 50%;}
-      .col-7 {width: 58.33%;}
-      .col-8 {width: 66.66%;}
-      .col-9 {width: 75%;}
-      .col-10 {width: 83.33%;}
-      .col-11 {width: 91.66%;}
-      .col-12 {width: 100%;}
-
+    
 
 
   }
-
-
-
+ 
 
